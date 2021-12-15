@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apem | Creative Idba</title>
+
+    <!--*** Link ***-->
+    <!--*** My CSS ***-->
+    <link rel="stylesheet" href="sheet/css/content.css" />
+    <!--*** Favicon ***-->
+    <link rel="icon" href="sheet/img/favicon.ico" />
+    <!--*** Icon ***-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--*** Google Font ***-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <a href="index.html" class="row-left">
+        <img src="sheet/img/logoq.png" alt="Logo" />
+        <p>CREATIVE IDBA</p>
+      </a>
+      <div class="row-right">
+        <form action="search.html">
+          <button type="submit" id="btnSearch">
+            <a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </button>
+        </form>
+        <a href="https://api.whatsapp.com/send?phone=6285854708692" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://creative-idba.github.io/#home" target="_blank"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></a>
+      </div>
+    </header>
+    <!-- Akhir Navbar -->
+
+    <!-- Content -->
+    <section class="content">
+      <div class="contentContainer-left">
+        <div class="row-top">
+          <img src="sheet/img/apem/apem-thumbnail.jpg" alt="Apem" />
+        </div>
+        <div class="row-bottom">
+          <img src="sheet/img/apem/apem-thumbnail.jpg" alt="" />
+        </div>
+      </div>
+      <div class="contentContainer-mid">
+        <p class="tittle">Apem (apam)</p>
+        <p class="price" id="harga">Rp1.000</p>
+        <div class="tab">
+          <div class="row">
+            <p class="row1">Detail</p>
+            <p class="row2">Info</p>
+          </div>
+          <div class="definisi opacity1">
+            Apam atau apem adalah makanan yang terbuat dari tepung beras yang didiamkan semalam dengan mencampurkan telur, santan, gula dan tape serta sedikit garam kemudian dibakar atau dikukus. Bentuknya mirip serabi, tetapi lebih tebal.
+          </div>
+          <div class="info opacity0">
+            Harga tersebut perbijinya. <br />
+            Jika ingin memesan harap konfirmasi/hubungin whatsapp <i class="fa fa-whatsapp" aria-hidden="true"></i> admin terlebih dahulu dan tunggu balasan dari admin apakah bisa melayani pesanan anda atau tidak. <br />
+            supaya tidak terjadi salah paham.
+          </div>
+        </div>
+      </div>
+      <div class="contentContainer-right">
+        <form action="">
+          <p>Atur Jumlah dan Catatan</p>
+          <div class="datainput">
+            <label>Jumlah yang akan di pesan:</label>
+            <br>
+            <!-- <button type="button" class="min">-</button> -->
+            <input class="validate" autocomplete="off" onchange="hasil(this.value)" name="jumlah" id="jumlah" type="number" value="0" min="1" max="200"/>
+            <!-- <button type="button" class="plus">+</button> -->
+            <br>
+            <label>Catatan:</label>
+            <textarea id="catatan" required placeholder="contoh: diambil tgl/hari..." name="pesan" rows="1"></textarea>
+            <div class="total">
+              <label>Subtotal:</label>
+              <span>Rp</span>
+              <span id="total">0</span>
+            </div>
+          </div>
+          <button type="submit" class="send">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <!-- Akhir Content -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="container1">
+          <div class="title">
+            <h3>Social Media</h3>
+          </div>
+          <div class="media">
+            <div class="row instagram">
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="row youtube">
+              <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+            <div class="row facebook">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div class="row github">
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <div class="row contact">
+              <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <h3>About Me</h3>
+          <h4 class="about-h4">we are professionals</h4>
+          <p class="about-p">We provide services for taking orders for various kinds of cakes.</p>
+        </div>
+        <div class="container3">
+          <h3>Gallery</h3>
+        </div>
+      </div>
+      <p class="footer-bottom">CREATIVE IDBA <i class="fa fa-copyright" aria-hidden="true"></i>2021.</p>
+    </footer>
+    <!--  Footer End -->
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="sheet/js/content.js"></script>
+    <!-- Script End -->
+  </body>
+</html>
