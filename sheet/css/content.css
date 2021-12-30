@@ -43,7 +43,7 @@ header {
   top: 0;
   width: 100vw;
   color: #fff;
-  height: 11vh;
+  height: 80px;
   display: flex;
   position: fixed;
   align-items: center;
@@ -52,7 +52,6 @@ header {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.836);
   z-index: 2;
 }
-
 header .row-left {
   display: flex;
   color: #fff;
@@ -63,35 +62,24 @@ header .row-left {
   font-weight: 600;
   text-decoration: none;
 }
-
 header .row-left img {
-  height: 9vh;
+  height: 78px;
   margin-right: 5px;
 }
-
 header .row-right {
   width: 15%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-header .row-right button {
-  padding: 15px 0;
-  border: transparent;
-  background-color: transparent;
-}
-
 header .row-right a {
   color: #fff;
   padding: 15px 20px;
   font-size: 18pt;
 }
-
 header .row-right a:hover {
   background-color: rgb(6, 143, 41);
 }
-
 header .row-right a:hover i {
   transform: scale(1.1);
 }
@@ -111,16 +99,26 @@ header .row-right a:hover i {
   width: 100%;
   border-radius: 5px;
 }
-.contentContainer-left .row-bottom img {
-  width: 15%;
+.contentContainer-left .row-bottom {
   display: flex;
-  margin: 2px auto;
-  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 }
+.contentContainer-left .row-bottom .active {
+  border: 3px solid rgb(3, 215, 56);
+  width: 16.5%;
+}
+.contentContainer-left .row-bottom img {
+  width: 14%;
+  display: flex;
+  margin: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* mid */
 .contentContainer-mid {
-  width: 45%;
-  margin-left: 50px;
-  padding-right: 150px;
+  width: 42%;
+  margin: 2% 5%;
 }
 .contentContainer-mid .tittle {
   font-size: 15pt;
@@ -140,27 +138,27 @@ header .row-right a:hover i {
   font-family: 'Open Sans', tahoma, sans-serif;
 }
 .contentContainer-mid .tab .row {
-  width: 100px;
-  padding-left: 3px;
+  border-bottom: 1px solid black;
+  padding: 1px;
   display: flex;
-  border-bottom: 1.5px solid rgba(104, 104, 104, 0.667);
+}
+.activee {
+  color: rgb(3, 215, 56) !important;
+  border-bottom: 2px solid rgb(3, 215, 56);
 }
 .contentContainer-mid .tab .row p {
   color: rgb(82, 82, 82);
+  padding: 0 10px;
   margin-right: 10px;
   font-weight: 600;
   cursor: pointer;
 }
 .contentContainer-mid .tab .definisi {
-  position: absolute;
-  width: 500px;
   margin-top: 10px;
   padding-bottom: 100px;
   background-color: #fff;
 }
 .contentContainer-mid .tab .info {
-  position: absolute;
-  width: 500px;
   margin-top: 10px;
   padding-bottom: 100px;
   background-color: #fff;
@@ -176,7 +174,7 @@ header .row-right a:hover i {
 label {
   font-size: 10pt;
 }
-.contentContainer-right form p {
+.contentContainer-right form .tittle {
   width: 85%;
   font-size: 12.5pt;
   font-weight: 600;
@@ -188,24 +186,36 @@ label {
   justify-content: stretch;
 }
 .datainput input {
-  width: 50px;
+  width: 50%;
   vertical-align: middle;
   -moz-appearance: textfield;
   box-sizing: content-box;
   margin: 1px 5px 5px;
+  padding: 1px 0;
   border: none;
   outline: none;
-  font-size: 13pt;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   text-align: center;
+  cursor: text;
   border-bottom: 2px solid rgba(0, 0, 0, 0.541);
+}
+.datainput input#jumlah {
+  width: 50px;
 }
 .datainput input:focus {
   border-bottom: 2px solid rgb(0, 191, 48);
 }
 .datainput input::-webkit-inner-spin-button,
-.datainput input::-webkit-outer-spin-button {
+.datainput input::-webkit-outer-spin-button,
+.datainput input::-webkit-calendar-picker-indicator {
   opacity: 1;
+  cursor: pointer;
+}
+.datainput input:focus::-webkit-calendar-picker-indicator {
+  background-color: rgb(0, 191, 48);
+  border-radius: 3px;
+  padding: 4px;
 }
 .datainput textarea {
   width: 90%;
@@ -223,8 +233,9 @@ label {
   border-bottom: 2px solid rgb(0, 191, 48);
 }
 form button {
-  width: 100%;
-  padding: 5px;
+  width: 90%;
+  padding: 6px;
+  margin-left: 5%;
   color: #fff;
   border: none;
   outline: none;
@@ -232,21 +243,32 @@ form button {
   border-radius: 5px;
   background-color: rgb(0, 191, 48);
   transition: 0.02s;
+  font-size: 12pt;
 }
 form button:hover {
   transform: scale(0.99);
   background-color: rgb(46, 243, 95);
 }
+form button i {
+  margin-left: 4px;
+}
 .total {
   width: 95%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .total span {
-  position:relative;
-  right: -90px;
   font-size: 13pt;
   font-weight: 600;
+}
+
+.contentContainer-right form .nb {
+  font-size: 9pt;
+  margin-bottom: 10px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  overflow: hidden;
 }
 /* Content end */
 
@@ -256,7 +278,7 @@ footer {
   bottom: 0;
   width: 100vw;
   display: block;
-  padding: 10px 30px 10px;
+  padding: 10px 30px;
   color: #fff;
   background-color: rgb(2, 177, 46);
   font-family: 'Poppins', sans-serif;
@@ -264,7 +286,7 @@ footer {
 
 .footer-top {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-around;
 }
 
@@ -375,3 +397,165 @@ footer .fa-copyright {
   margin: 0 1px;
 }
 /* Akhir Footer */
+
+/* Responsive Tablet */
+@media screen and (max-width: 770px) {
+  /* Header */
+  header {
+    height: 90px;
+    padding: 0 85px;
+  }
+  header .row-left {
+    width: 50%;
+    margin-right: 0px;
+  }
+  header .row-left img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+  }
+  header .row-left p {
+    width: 75%;
+  }
+  header .row-right {
+    width: 20%;
+  }
+  header .row-right a {
+    padding: 10px 15px;
+    font-size: 21pt;
+  }
+  /* Akhir Header */
+
+  /* Contetnt */
+  .content {
+    display: block;
+    padding: 0 85px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .contentContainer-left {
+    width: 100%;
+  }
+  .contentContainer-left .myslider img {
+    clip-path: inset(10%.100%);
+  }
+  .contentContainer-left .row-bottom {
+    position: relative;
+    margin-top: -60px;
+  }
+  .contentContainer-left .row-bottom img {
+    width: 60px;
+  }
+  .contentContainer-left .row-bottom .active {
+    width: 70px;
+  }
+  .contentContainer-mid {
+    width: 90%;
+  }
+  .contentContainer-mid .myslidee {
+    padding: 0px !important;
+  }
+  .contentContainer-right {
+    width: 50%;
+    margin: 20px auto;
+  }
+  /* Akhir Content */
+
+  /* Footer */
+  footer {
+    position: relative !important;
+  }
+  footer h3 {
+    font-size: 13pt;
+  }
+  .footer-top .container1 {
+    width: 25%;
+  }
+  .footer-top .container1 .row {
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+  }
+  .footer-top .container1 .row i {
+    font-size: 13pt;
+  }
+  .footer-top .container2 h4 {
+    font-size: 12pt;
+  }
+  .footer-top .container2 h4 {
+    font-size: 11pt;
+  }
+  .footer-top .container3 {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* Header */
+  header {
+    height: 60px;
+    padding: 0;
+  }
+  header .row-left {
+    margin-right: 30px;
+  }
+  header .row-left img {
+    width: 45px;
+    margin-right: 5px;
+  }
+  header .row-left p {
+    font-size: 11pt;
+  }
+  header .row-right a {
+    font-size: 15pt;
+    padding: 5px;
+  }
+  /* Akhir Header */
+
+  /* Content */
+  .content {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .contentContainer-left .myslider img {
+    clip-path: inset(5%.100%);
+  }
+  .contentContainer-left .row-bottom img {
+    width: 30px;
+  }
+  .contentContainer-left .row-bottom .active {
+    width: 40px;
+  }
+  .contentContainer-left .row-bottom {
+    margin-top: -20px;
+  }
+  .contentContainer-right {
+    width: 70%;
+    margin: 20px auto;
+  }
+  /* Akhir Content */
+
+  /* Footer */
+  footer {
+    padding: 10px 5px;
+  }
+  footer h3 {
+    font-size: 11pt;
+  }
+  .footer-top .container1 {
+    width: 25%;
+  }
+  .footer-top .container1 .media {
+    display: block;
+  }
+  .footer-top .container1 .row {
+    margin: 2px auto;
+  }
+  .footer-top .container2 h4 {
+    font-size: 11pt;
+  }
+  .footer-top .container2 p {
+    font-size: 9pt;
+  }
+  /* Akhir Footer */
+}

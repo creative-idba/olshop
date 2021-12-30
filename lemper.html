@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apem | Creative Idba</title>
+    <title>Lemper | Creative Idba</title>
 
     <!--*** Link ***-->
     <!--*** My CSS ***-->
@@ -36,26 +36,27 @@
     <section class="content">
       <div class="contentContainer-left">
         <div class="myslider row-top">
-          <img src="sheet/img/apem/apem-thumbnail.jpg" alt="gambar" />
+          <img src="sheet/img/lemper/lemper-thumbnail.jpg" alt="Donat" />
         </div>
         <div class="myslider row-top">
-          <img src="sheet/img/apem/apem-thumbnail.jpg" alt="gambar" />
+          <img src="sheet/img/lemper/lemper1.jpg" alt="Donat" />
         </div>
         <!-- dot -->
         <div class="row-bottom">
-          <img src="sheet/img/apem/apem-thumbnail.jpg" class="dot active" onclick="currentSlide(1)" alt="" />
+          <img src="sheet/img/lemper/lemper-thumbnail.jpg"  class="dot active" onclick="currentSlide(1)" alt="" />
+          <img src="sheet/img/lemper/lemper1.jpg"  class="dot" onclick="currentSlide(2)" alt="" />
         </div>
       </div>
       <div class="contentContainer-mid">
-        <p id="tittle" class="tittle">Apem</p>
-        <p class="price" id="harga">Rp1.500,00</p>
+        <p id="tittle" class="tittle">Lemper</p>
+        <p class="price" id="harga">Rp2.500,00</p>
         <div class="tab">
           <div class="row">
             <p class="row1 activee" onclick="currentSlidee(1)" >Detail</p>
             <p class="row2" onclick="currentSlidee(2)" >Info</p>
           </div>
           <div class="definisi myslidee">
-            Apam atau apem adalah makanan yang terbuat dari tepung beras yang didiamkan semalam dengan mencampurkan telur, santan, gula dan tape serta sedikit garam kemudian dibakar atau dikukus. Bentuknya mirip serabi, tetapi lebih tebal.
+            Lemper adalah penganan yang terbuat dari ketan yang biasanya berisi abon atau cincangan daging ayam, dan dibungkus dengan daun pisang. Penganan ini terkenal di seluruh Indonesia sebagai pengganjal perut sebelum memasuki tahap makan besar.
           </div>
           <div class="info myslidee">
             Harga tersebut perbijinya. <br />
@@ -70,12 +71,12 @@
           <div class="datainput">
             <label>Jumlah yang akan di pesan:</label>
             <br />
-            <input autocomplete="off" onchange="hasilApem(this.value)" name="jumlah-apem" id="jumlah" type="number" value="20" min="20" max="200" />
+            <input autocomplete="off" onchange="hasilDonat(this.value)" name="jumlah-donat" id="jumlah" type="number" value="20" min="20" max="200" />
             <br />
             <label>Di ambil:</label>
-            <br />
-            <input type="date" required name="date" id="date" />
-            <br />
+            <br>
+            <input type="date" required name="date" id="date">
+            <br>
             <label>Catatan:</label>
             <textarea id="catatan" required placeholder="contoh: lokasi mana?" name="pesan" rows="1"></textarea>
             <div class="total">
@@ -84,8 +85,10 @@
               <span id="total-donat" class="tota">0</span></span>
             </div>
           </div>
-          <p class="nb"><b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer</p>
-          <button type="submit" class="send">Kirim</button>
+          <p class="nb">
+            <b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer
+          </p>
+          <button type="submit" class="send">Kirim<i class="fa fa-whatsapp" aria-hidden="true"></i></button>
         </form>
       </div>
     </section>
