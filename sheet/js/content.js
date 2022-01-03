@@ -10,7 +10,7 @@ tab1.addEventListener('click', function () {
 tab2.addEventListener('click', function () {
   info.classList.toggle('opacity1');
 });
-  
+
 // Slider
 const myslide = document.querySelectorAll('.myslider'),
   dot = document.querySelectorAll('.dot');
@@ -44,16 +44,6 @@ function slidefun(n) {
   myslide[counter - 1].style.display = 'block';
   dot[counter - 1].classList.add('active');
 }
-
-
-
-
-
-
-
-
-
-
 
 const myslidee = document.querySelectorAll('.myslidee'),
   dott = document.querySelectorAll('.tab p');
@@ -99,6 +89,36 @@ function hasilDonat(jumlah_donat) {
   var datajumlah = parseInt(jumlah_donat);
   document.getElementById('total-donat').innerHTML = datajumlah * 2500;
 }
+//Total lemper
+function hasilLemper(jumlah_lemper) {
+  var datajumlah = parseInt(jumlah_lemper);
+  document.getElementById('total-lemper').innerHTML = datajumlah * 2500;
+}
+//Total pastel
+function hasilPastel(jumlah_pastel) {
+  var datajumlah = parseInt(jumlah_pastel);
+  document.getElementById('total-pastel').innerHTML = datajumlah * 2500;
+}
+//Total putu ayu
+function hasilPutuAyu(jumlah_putu_ayu) {
+  var datajumlah = parseInt(jumlah_putu_ayu);
+  document.getElementById('total-putu-ayu').innerHTML = datajumlah * 2500;
+}
+//Total wingko
+function hasilWingko(jumlah_wingko) {
+  var datajumlah = parseInt(jumlah_wingko);
+  document.getElementById('total-wingko').innerHTML = datajumlah * 2500;
+}
+//Total sus buah
+function hasilSusBuah(jumlah_sus_buah) {
+  var datajumlah = parseInt(jumlah_sus_buah);
+  document.getElementById('total-sus-buah').innerHTML = datajumlah * 2500;
+}
+//Total bolu kelapa
+function hasilBoluKelapa(jumlah_bolu_kelapa) {
+  var datajumlah = parseInt(jumlah_bolu_kelapa);
+  document.getElementById('total-bolu-kelapa').innerHTML = datajumlah * 2500;
+}
 
 //WA
 $(document).on('click', '.send', function () {
@@ -128,13 +148,33 @@ $(document).on('click', '.send', function () {
     var dp = total / 2;
 
     /* Final Whatsapp URL */
-    var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
-      '*Jenis Pangan* : ' + input_nama + '%0A' + 
-      '*Jumlah* : ' + input_jumlah + '%0A' +
-      '*Total* : ' + 'Rp.' + total + '%0A' +
-      '*DP* : ' + 'Rp.' + dp + '%0A ' +
-      '*Catatan* : ' + input_catatan + '%0A' +
-      '*Tanggal Pengambilan* : ' + date + '%0A';
+    var blanter_whatsapp =
+      walink +
+      '?phone=' +
+      phone +
+      '&text=' +
+      walink2 +
+      '%0A%0A' +
+      '*Jenis Pangan* : ' +
+      input_nama +
+      '%0A' +
+      '*Jumlah* : ' +
+      input_jumlah +
+      '%0A' +
+      '*Total* : ' +
+      'Rp.' +
+      total +
+      '%0A' +
+      '*DP* : ' +
+      'Rp.' +
+      dp +
+      '%0A ' +
+      '*Catatan* : ' +
+      input_catatan +
+      '%0A' +
+      '*Tanggal Pengambilan* : ' +
+      date +
+      '%0A';
 
     /* Whatsapp Window Open */
     window.open(blanter_whatsapp, '_blank');

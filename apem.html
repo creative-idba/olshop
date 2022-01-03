@@ -38,9 +38,6 @@
         <div class="myslider row-top">
           <img src="sheet/img/apem/apem-thumbnail.jpg" alt="gambar" />
         </div>
-        <div class="myslider row-top">
-          <img src="sheet/img/apem/apem-thumbnail.jpg" alt="gambar" />
-        </div>
         <!-- dot -->
         <div class="row-bottom">
           <img src="sheet/img/apem/apem-thumbnail.jpg" class="dot active" onclick="currentSlide(1)" alt="" />
@@ -81,7 +78,7 @@
             <div class="total">
               <label>Subtotal:</label>
               <span>Rp.
-              <span id="total-donat" class="tota">0</span></span>
+              <span id="total-apem" class="tota">0</span></span>
             </div>
           </div>
           <p class="nb"><b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer</p>
@@ -132,13 +129,6 @@
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="sheet/js/content.js"></script>
-    <script>
-      //Total
-      function hasil(jumlah) {
-        var datajumlah = parseInt(jumlah);
-        document.getElementById('total').innerHTML = datajumlah * 1000;
-      }
-    </script>
     <!-- Script End -->
   </body>
 </html>

@@ -71,7 +71,7 @@
           <div class="datainput">
             <label>Jumlah yang akan di pesan:</label>
             <br />
-            <input autocomplete="off" onchange="hasilDonat(this.value)" name="jumlah-donat" id="jumlah" type="number" value="20" min="20" max="200" />
+            <input autocomplete="off" onchange="hasilLemper(this.value)" name="jumlah-lemper" id="jumlah" type="number" value="20" min="20" max="200" />
             <br />
             <label>Di ambil:</label>
             <br>
@@ -82,7 +82,7 @@
             <div class="total">
               <label>Subtotal:</label>
               <span>Rp.
-              <span id="total-donat" class="tota">0</span></span>
+              <span id="total-lemper" class="tota">0</span></span>
             </div>
           </div>
           <p class="nb">
@@ -135,13 +135,6 @@
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="sheet/js/content.js"></script>
-    <script>
-      //Total
-      function hasil(jumlah) {
-        var datajumlah = parseInt(jumlah);
-        document.getElementById('total').innerHTML = datajumlah * 1000;
-      }
-    </script>
     <!-- Script End -->
   </body>
 </html>

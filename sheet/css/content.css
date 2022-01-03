@@ -153,12 +153,7 @@ header .row-right a:hover i {
   font-weight: 600;
   cursor: pointer;
 }
-.contentContainer-mid .tab .definisi {
-  margin-top: 10px;
-  padding-bottom: 100px;
-  background-color: #fff;
-}
-.contentContainer-mid .tab .info {
+.contentContainer-mid .tab .myslidee {
   margin-top: 10px;
   padding-bottom: 100px;
   background-color: #fff;
@@ -297,9 +292,10 @@ footer {
 
 .footer-top .container1 .media {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer-top .container1 .row {
@@ -503,7 +499,7 @@ footer .fa-copyright {
     margin-right: 5px;
   }
   header .row-left p {
-    font-size: 11pt;
+    font-size: 12pt;
   }
   header .row-right a {
     font-size: 15pt;
@@ -529,6 +525,9 @@ footer .fa-copyright {
   .contentContainer-left .row-bottom {
     margin-top: -20px;
   }
+  .contentContainer-mid .tab .myslidee {
+    font-size: 11pt;
+  }
   .contentContainer-right {
     width: 70%;
     margin: 20px auto;
@@ -545,11 +544,14 @@ footer .fa-copyright {
   .footer-top .container1 {
     width: 25%;
   }
-  .footer-top .container1 .media {
-    display: block;
-  }
   .footer-top .container1 .row {
+    width: 25px;
+    height: 25px;
     margin: 2px auto;
+  }
+  .footer-top .container1 .row i {
+    font-size: 10pt;
+    margin-bottom: 50px;
   }
   .footer-top .container2 h4 {
     font-size: 11pt;

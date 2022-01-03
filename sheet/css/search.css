@@ -42,6 +42,8 @@ header .row-left {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-decoration: none;
+  color: #fff;
   font-size: 20pt;
   font-weight: 600;
 }
@@ -191,6 +193,8 @@ header .row-right a:hover i {
 
 /* Footer */
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100vw;
   display: block;
   padding: 10px 30px 10px;
@@ -201,7 +205,6 @@ footer {
 
 .footer-top {
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -214,7 +217,8 @@ footer {
   display: flex;
   margin-bottom: 0;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .footer-top .container1 .row {
@@ -312,3 +316,143 @@ footer .fa-copyright {
   margin: 0 1px;
 }
 /* Akhir Footer */
+
+@media screen and (max-width: 770px) {
+  /* Header */
+  header {
+    height: 90px;
+    padding: 0 50px;
+  }
+  header .row-left {
+    width: 45%;
+    margin-right: 0px;
+  }
+  header .row-left p {
+    font-size: 17pt;
+  }
+  header .row-left img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+  }
+  header .row-mid {
+    width: 40%;
+    height: 35%;
+  }
+  header .row-left p {
+    width: 75%;
+  }
+
+  header .row-right {
+    width: 22%;
+  }
+  header .row-right a {
+    padding: 10px 15px;
+    font-size: 21pt;
+  }
+  /* Akhir Header */
+
+  /* Footer */
+  footer h3 {
+    font-size: 13pt;
+  }
+  .footer-top .container1 {
+    width: 25%;
+  }
+  .footer-top .container1 .row {
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+  }
+  .footer-top .container1 .row i {
+    font-size: 13pt;
+  }
+  .footer-top .container2 h4 {
+    font-size: 12pt;
+  }
+  .footer-top .container2 h4 {
+    font-size: 11pt;
+  }
+  .footer-top .container3 {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* Header */
+  header {
+    height: 60px;
+    padding: 0 20px;
+  }
+  header .row-left {
+    width: 55%;
+  }
+  header .row-left img {
+    width: 45px;
+    margin-right: 5px;
+  }
+  header .row-left p {
+    font-size: 11pt;
+  }
+  header .row-mid {
+    width: 45%;
+    height: 50%;
+  }
+  header .row-mid form i {
+    font-size: 10pt;
+  }
+  header .row-mid form input {
+    width: 80%;
+  }
+  header .row-mid form button {
+    width: 23px;
+    overflow: hidden;
+  }
+  header .row-right {
+    display: none;
+  }
+  /* Akhir Header */
+
+  /* Content */
+  .content1 .tittle {
+    font-size: 13pt;
+  }
+  .content1 .item-list {
+    width: 75px;
+    height: 100px;
+  }
+  .content1 .item-list .detail {
+    margin-left: 4px !important;
+  }
+  /* Akhir Content */
+
+  /* Footer */
+  footer {
+    padding: 10px 5px;
+  }
+  footer h3 {
+    font-size: 11pt;
+  }
+  .footer-top .container1 {
+    width: 25%;
+  }
+  .footer-top .container1 .media {
+    display: block;
+  }
+  .footer-top .container1 .row {
+    width: 25px;
+    height: 25px;
+    margin: 2px auto;
+  }
+  .footer-top .container1 .row i {
+    font-size: 10pt;
+    margin-bottom: 50px;
+  }
+  .footer-top .container2 h4 {
+    font-size: 11.5pt;
+  }
+  .footer-top .container2 p {
+    font-size: 9pt;
+  }
+  /* Akhir Footer */
+}
