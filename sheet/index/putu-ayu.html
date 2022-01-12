@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sus Buah | Creative Idba</title>
+    <title>Putu Ayu | Creative Idba</title>
 
     <!--*** Link ***-->
     <!--*** My CSS ***-->
-    <link rel="stylesheet" href="sheet/css/content.css" />
+    <link rel="stylesheet" href="../css/content.css" />
     <!--*** Favicon ***-->
-    <link rel="icon" href="sheet/img/favicon.ico" />
+    <link rel="icon" href="../img/favicon.ico" />
     <!--*** Icon ***-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--*** Google Font ***-->
@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <header>
       <a href="index.html" class="row-left">
-        <img src="sheet/img/logoq.png" alt="Logo" />
+        <img src="../img/logoq.png" alt="Logo" />
         <p>CREATIVE IDBA</p>
       </a>
       <div class="row-right">
@@ -36,27 +36,23 @@
     <section class="content">
       <div class="contentContainer-left">
         <div class="myslider row-top">
-          <img src="sheet/img/sus buah/sus-buah-thumbnail2.jpg" alt="gambar" />
+          <img src="../img/putu-ayu/putu-ayu-thumbnail.jpg" alt="gambar" />
         </div>
         <div class="myslider row-top">
-          <img src="sheet/img/sus buah/sus1.jpg" alt="gambar" />
+          <img src="../img/putu-ayu/putu-ayu1.jpg" alt="gambar" />
         </div>
         <div class="myslider row-top">
-          <img src="sheet/img/sus buah/sus2.jpg" alt="gambar" />
-        </div>
-        <div class="myslider row-top">
-          <img src="sheet/img/sus buah/sus3.jpg" alt="gambar" />
+          <img src="../img/putu-ayu/putu-ayu2.jpg" alt="gambar" />
         </div>
         <!-- dot -->
         <div class="row-bottom">
-          <img src="sheet/img/sus buah/sus-buah-thumbnail2.jpg" class="dot active" onclick="currentSlide(1)" alt="" />
-          <img src="sheet/img/sus buah/sus1.jpg" class="dot active" onclick="currentSlide(2)" alt="" />
-          <img src="sheet/img/sus buah/sus2.jpg" class="dot active" onclick="currentSlide(3)" alt="" />
-          <img src="sheet/img/sus buah/sus3.jpg" class="dot active" onclick="currentSlide(4)" alt="" />
+          <img src="../img/putu-ayu/putu-ayu-thumbnail.jpg" class="dot active" onclick="currentSlide(1)" alt="gambar" />
+          <img src="../img/putu-ayu/putu-ayu1.jpg" class="dot active" onclick="currentSlide(2)" alt="gambar" />
+          <img src="../img/putu-ayu/putu-ayu2.jpg" class="dot active" onclick="currentSlide(3)" alt="gambar" />
         </div>
       </div>
       <div class="contentContainer-mid">
-        <p id="tittle" class="tittle">Sus Buah</p>
+        <p id="tittle" class="tittle">Putu Ayu</p>
         <p class="price" id="harga">Rp1.500,00</p>
         <div class="tab">
           <div class="row">
@@ -64,7 +60,7 @@
             <p class="row2" onclick="currentSlidee(2)" >Info</p>
           </div>
           <div class="definisi myslidee">
-            Sus memiliki tekstur kulit luar yang kering-renyah dan tekstur dalam yang empuk dan lembut. Karena itu sangat cocok dipadu dengan aneka bahan baik yang manis ataupun asin. Mau diisi ragout, daging, ataupun vla semua enak. Yang tak kalah enak juga yaitu diisi dengan beragam buah-buahan segar.
+            Putu ayu merupakan kue yang umumnya berbentuk bunga dengan ciri khas kelapa parut di atasnya. Kue ini memiliki rasa manis dan gurih yang cocok dijadikan kudapan bersantai.
           </div>
           <div class="info myslidee">
             Harga tersebut perbijinya. <br />
@@ -79,7 +75,7 @@
           <div class="datainput">
             <label>Jumlah yang akan di pesan:</label>
             <br />
-            <input autocomplete="off" onchange="hasilSusBuah(this.value)" name="jumlah-sus-buah" id="jumlah" type="number" value="20" min="20" max="200" />
+            <input autocomplete="off" onchange="hasilPutuAyu(this.value)" name="jumlah-putu-ayu" id="jumlah" type="number" value="20" min="20" max="200" />
             <br />
             <label>Di ambil:</label>
             <br />
@@ -90,7 +86,7 @@
             <div class="total">
               <label>Subtotal:</label>
               <span>Rp.
-              <span id="total-sus-buah" class="tota">0</span></span>
+              <span id="total-putu-ayu" class="tota">0</span></span>
             </div>
           </div>
           <p class="nb"><b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer</p>
@@ -140,7 +136,7 @@
 
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="sheet/js/content.js"></script>
+    <script src="../js/content.js"></script>
     <!-- Script End -->
   </body>
 </html>

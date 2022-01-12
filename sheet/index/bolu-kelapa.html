@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apem | Creative Idba</title>
+    <title>Bolu Kelapa | Creative Idba</title>
 
     <!--*** Link ***-->
     <!--*** My CSS ***-->
-    <link rel="stylesheet" href="sheet/css/content.css" />
+    <link rel="stylesheet" href="../css/content.css" />
     <!--*** Favicon ***-->
-    <link rel="icon" href="sheet/img/favicon.ico" />
+    <link rel="icon" href="../img/favicon.ico" />
     <!--*** Icon ***-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--*** Google Font ***-->
@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <header>
       <a href="index.html" class="row-left">
-        <img src="sheet/img/logoq.png" alt="Logo" />
+        <img src="../img/logoq.png" alt="Logo" />
         <p>CREATIVE IDBA</p>
       </a>
       <div class="row-right">
@@ -36,15 +36,27 @@
     <section class="content">
       <div class="contentContainer-left">
         <div class="myslider row-top">
-          <img src="sheet/img/apem/apem-thumbnail.jpg" alt="gambar" />
+          <img src="../img/bolu-kelapa/bolu-thumbnail.jpg" alt="gambar" />
+        </div>
+        <div class="myslider row-top">
+          <img src="../img/bolu-kelapa/rotikelapa.jpg" alt="gambar" />
+        </div>
+        <div class="myslider row-top">
+          <img src="../img/bolu-kelapa/roti-kelapa1.jpg" alt="gambar" />
+        </div>
+        <div class="myslider row-top">
+          <img src="../img/bolu-kelapa/roti-kelapa2.jpg" alt="gambar" />
         </div>
         <!-- dot -->
         <div class="row-bottom">
-          <img src="sheet/img/apem/apem-thumbnail.jpg" class="dot active" onclick="currentSlide(1)" alt="" />
+          <img src="../img/bolu-kelapa/bolu-thumbnail.jpg" class="dot active" onclick="currentSlide(1)" alt="" />
+          <img src="../img/bolu-kelapa/rotikelapa.jpg" class="dot active" onclick="currentSlide(2)" alt="" />
+          <img src="../img/bolu-kelapa/roti-kelapa1.jpg" class="dot active" onclick="currentSlide(3)" alt="" />
+          <img src="../img/bolu-kelapa/roti-kelapa2.jpg" class="dot active" onclick="currentSlide(4)" alt="" />
         </div>
       </div>
       <div class="contentContainer-mid">
-        <p id="tittle" class="tittle">Apem</p>
+        <p id="tittle" class="tittle">Bolu Kelapa</p>
         <p class="price" id="harga">Rp1.500,00</p>
         <div class="tab">
           <div class="row">
@@ -52,7 +64,7 @@
             <p class="row2" onclick="currentSlidee(2)" >Info</p>
           </div>
           <div class="definisi myslidee">
-            Apam atau apem adalah makanan yang terbuat dari tepung beras yang didiamkan semalam dengan mencampurkan telur, santan, gula dan tape serta sedikit garam kemudian dibakar atau dikukus. Bentuknya mirip serabi, tetapi lebih tebal.
+            Bolu kelapa adalah kue berbahan dasar kelapa parut, tepung, gula, dan telur. Kue bolu kelapa umumnya dimatangkan dengan cara dipanggang di dalam oven.
           </div>
           <div class="info myslidee">
             Harga tersebut perbijinya. <br />
@@ -67,7 +79,7 @@
           <div class="datainput">
             <label>Jumlah yang akan di pesan:</label>
             <br />
-            <input autocomplete="off" onchange="hasilApem(this.value)" name="jumlah-apem" id="jumlah" type="number" value="20" min="20" max="200" />
+            <input autocomplete="off" onchange="hasilBoluKelapa(this.value)" name="jumlah-bolu-kelapa" id="jumlah" type="number" value="20" min="20" max="200" />
             <br />
             <label>Di ambil:</label>
             <br />
@@ -78,7 +90,7 @@
             <div class="total">
               <label>Subtotal:</label>
               <span>Rp.
-              <span id="total-apem" class="tota">0</span></span>
+              <span id="total-bolu-kelapa" class="tota">0</span></span>
             </div>
           </div>
           <p class="nb"><b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer</p>
@@ -128,7 +140,7 @@
 
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="sheet/js/content.js"></script>
+    <script src="../js/content.js"></script>
     <!-- Script End -->
   </body>
 </html>

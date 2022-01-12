@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donat | Creative Idba</title>
+    <title>Sus Buah | Creative Idba</title>
 
     <!--*** Link ***-->
     <!--*** My CSS ***-->
-    <link rel="stylesheet" href="sheet/css/content.css" />
+    <link rel="stylesheet" href="../css/content.css" />
     <!--*** Favicon ***-->
-    <link rel="icon" href="sheet/img/favicon.ico" />
+    <link rel="icon" href="../img/favicon.ico" />
     <!--*** Icon ***-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--*** Google Font ***-->
@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <header>
       <a href="index.html" class="row-left">
-        <img src="sheet/img/logoq.png" alt="Logo" />
+        <img src="../img/logoq.png" alt="Logo" />
         <p>CREATIVE IDBA</p>
       </a>
       <div class="row-right">
@@ -36,29 +36,37 @@
     <section class="content">
       <div class="contentContainer-left">
         <div class="myslider row-top">
-          <img src="sheet/img/donat/donat-thumbnail.jpg" alt="Donat" />
+          <img src="../img/sus buah/sus-buah-thumbnail2.jpg" alt="gambar" />
         </div>
         <div class="myslider row-top">
-          <img src="sheet/img/donat/donat1.jpg" alt="Donat" />
+          <img src="../img/sus buah/sus1.jpg" alt="gambar" />
+        </div>
+        <div class="myslider row-top">
+          <img src="../img/sus buah/sus2.jpg" alt="gambar" />
+        </div>
+        <div class="myslider row-top">
+          <img src="../img/sus buah/sus3.jpg" alt="gambar" />
         </div>
         <!-- dot -->
         <div class="row-bottom">
-          <img src="sheet/img/donat/donat-thumbnail.jpg"  class="dot active" onclick="currentSlide(1)" alt="" />
-          <img src="sheet/img/donat/donat1.jpg"  class="dot" onclick="currentSlide(2)" alt="" />
+          <img src="../img/sus buah/sus-buah-thumbnail2.jpg" class="dot active" onclick="currentSlide(1)" alt="" />
+          <img src="../img/sus buah/sus1.jpg" class="dot active" onclick="currentSlide(2)" alt="" />
+          <img src="../img/sus buah/sus2.jpg" class="dot active" onclick="currentSlide(3)" alt="" />
+          <img src="../img/sus buah/sus3.jpg" class="dot active" onclick="currentSlide(4)" alt="" />
         </div>
       </div>
       <div class="contentContainer-mid">
-        <p id="tittle" class="tittle">Donat</p>
-        <p class="price" id="harga">Rp2.500,00</p>
+        <p id="tittle" class="tittle">Sus Buah</p>
+        <p class="price" id="harga">Rp1.500,00</p>
         <div class="tab">
           <div class="row">
             <p class="row1 activee" onclick="currentSlidee(1)" >Detail</p>
             <p class="row2" onclick="currentSlidee(2)" >Info</p>
           </div>
-          <div class="myslidee">
-            Donat adalah penganan yang digoreng, dibuat dari adonan tepung terigu, gula, telur, dan mentega. Donat yang paling umum adalah donat berbentuk cincin dengan lubang di tengah dan donat berbentuk bundar dengan isian manis, seperti selai, jelly, krim, dan custard.
+          <div class="definisi myslidee">
+            Sus memiliki tekstur kulit luar yang kering-renyah dan tekstur dalam yang empuk dan lembut. Karena itu sangat cocok dipadu dengan aneka bahan baik yang manis ataupun asin. Mau diisi ragout, daging, ataupun vla semua enak. Yang tak kalah enak juga yaitu diisi dengan beragam buah-buahan segar.
           </div>
-          <div class="myslidee">
+          <div class="info myslidee">
             Harga tersebut perbijinya. <br />
             Jika ingin memesan harap konfirmasi/hubungin whatsapp <i class="fa fa-whatsapp" aria-hidden="true"></i> admin terlebih dahulu dan tunggu balasan dari admin apakah bisa melayani pesanan anda atau tidak. <br />
             supaya tidak terjadi salah paham.
@@ -71,24 +79,22 @@
           <div class="datainput">
             <label>Jumlah yang akan di pesan:</label>
             <br />
-            <input autocomplete="off" onchange="hasilDonat(this.value)" name="jumlah-donat" id="jumlah" type="number" value="20" min="20" max="200" />
+            <input autocomplete="off" onchange="hasilSusBuah(this.value)" name="jumlah-sus-buah" id="jumlah" type="number" value="20" min="20" max="200" />
             <br />
             <label>Di ambil:</label>
-            <br>
-            <input type="date" required name="date" id="date">
-            <br>
+            <br />
+            <input type="date" required name="date" id="date" />
+            <br />
             <label>Catatan:</label>
             <textarea id="catatan" required placeholder="contoh: lokasi mana?" name="pesan" rows="1"></textarea>
             <div class="total">
               <label>Subtotal:</label>
               <span>Rp.
-              <span id="total-donat" class="tota">0</span></span>
+              <span id="total-sus-buah" class="tota">0</span></span>
             </div>
           </div>
-          <p class="nb">
-            <b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer
-          </p>
-          <button type="submit" class="send">Kirim<i class="fa fa-whatsapp" aria-hidden="true"></i></button>
+          <p class="nb"><b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer</p>
+          <button type="submit" class="send">Kirim</button>
         </form>
       </div>
     </section>
@@ -134,7 +140,7 @@
 
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="sheet/js/content.js"></script>
+    <script src="../js/content.js"></script>
     <!-- Script End -->
   </body>
 </html>

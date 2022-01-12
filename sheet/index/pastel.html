@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wingko | Creative Idba</title>
+    <title>Pastel | Creative Idba</title>
 
     <!--*** Link ***-->
     <!--*** My CSS ***-->
-    <link rel="stylesheet" href="sheet/css/content.css" />
+    <link rel="stylesheet" href="../css/content.css" />
     <!--*** Favicon ***-->
-    <link rel="icon" href="sheet/img/favicon.ico" />
+    <link rel="icon" href="../img/favicon.ico" />
     <!--*** Icon ***-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--*** Google Font ***-->
@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <header>
       <a href="index.html" class="row-left">
-        <img src="sheet/img/logoq.png" alt="Logo" />
+        <img src="../img/logoq.png" alt="Logo" />
         <p>CREATIVE IDBA</p>
       </a>
       <div class="row-right">
@@ -36,15 +36,15 @@
     <section class="content">
       <div class="contentContainer-left">
         <div class="myslider row-top">
-          <img src="sheet/img/wingko/wingko-thumbnail.jpg" alt="gambar" />
+          <img src="../img/pastel/pastel-thumbnail.jpg" alt="gambar" />
         </div>
         <!-- dot -->
         <div class="row-bottom">
-          <img src="sheet/img/wingko/wingko-thumbnail.jpg" class="dot active" onclick="currentSlide(1)" alt="" />
+          <img src="../img/pastel/pastel-thumbnail.jpg" class="dot active" onclick="currentSlide(1)" alt="gambar" />
         </div>
       </div>
       <div class="contentContainer-mid">
-        <p id="tittle" class="tittle">Wingko Babat</p>
+        <p id="tittle" class="tittle">Pastel</p>
         <p class="price" id="harga">Rp1.500,00</p>
         <div class="tab">
           <div class="row">
@@ -52,7 +52,7 @@
             <p class="row2" onclick="currentSlidee(2)" >Info</p>
           </div>
           <div class="definisi myslidee">
-            Wingko atau sering disebut juga Wingko babat adalah makanan tradisional khas Indonesia. Wingko adalah sejenis kue yang terbuat dari kelapa muda, tepung beras ketan dan gula. Wingko sangat terkenal di pantai utara pulau Jawa.
+            Pastel adalah semacam pastri yang dibuat dengan meletakkan isian di atas adonan, lalu dilipat dan ditutup rapat. Pastel dapat terasa manis atau gurih tergantung dari isian. Pastel dapat menjadi makanan yang mudah dibawa-bawa, sama seperti sandwich.
           </div>
           <div class="info myslidee">
             Harga tersebut perbijinya. <br />
@@ -67,7 +67,7 @@
           <div class="datainput">
             <label>Jumlah yang akan di pesan:</label>
             <br />
-            <input autocomplete="off" onchange="hasilWingko(this.value)" name="jumlah-wingko" id="jumlah" type="number" value="20" min="20" max="200" />
+            <input autocomplete="off" onchange="hasilPastel(this.value)" name="jumlah-pastel" id="jumlah" type="number" value="20" min="20" max="200" />
             <br />
             <label>Di ambil:</label>
             <br />
@@ -78,7 +78,7 @@
             <div class="total">
               <label>Subtotal:</label>
               <span>Rp.
-              <span id="total-wingko" class="tota">0</span></span>
+              <span id="total-pastel" class="tota">0</span></span>
             </div>
           </div>
           <p class="nb"><b>NB:</b> Uang DP setengah harga subtotal. untuk saat ini belum melayani transfer</p>
@@ -128,7 +128,7 @@
 
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="sheet/js/content.js"></script>
+    <script src="../js/content.js"></script>
     <!-- Script End -->
   </body>
 </html>
