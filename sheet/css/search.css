@@ -191,132 +191,6 @@ header .row-right a:hover i {
 }
 /* Akhir Content */
 
-/* Footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  display: block;
-  padding: 10px 30px 10px;
-  color: #fff;
-  background-color: rgb(2, 177, 46);
-  font-family: 'Poppins', sans-serif;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer-top .container1 {
-  width: 20%;
-  text-align: center;
-}
-
-.footer-top .container1 .media {
-  display: flex;
-  margin-bottom: 0;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.footer-top .container1 .row {
-  background-color: #fff;
-  width: 37px;
-  height: 35px;
-  margin: 4px;
-  padding-top: 5px;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 0 0 2px black;
-}
-
-.footer-top .container1 .row i {
-  font-size: 16pt;
-  transition: 0.5s color;
-}
-
-.footer-top .container1 .instagram i {
-  color: #e1306c;
-}
-.footer-top .container1 .instagram:hover {
-  background-color: #e1306c;
-}
-.footer-top .container1 .instagram:hover i {
-  color: #fff;
-}
-.footer-top .container1 .youtube i {
-  color: #e81818;
-}
-.footer-top .container1 .youtube:hover {
-  background-color: #e81818;
-}
-.footer-top .container1 .youtube:hover i {
-  color: #fff;
-}
-.footer-top .container1 .facebook i {
-  color: #3b5999;
-  margin-top: 2px;
-}
-.footer-top .container1 .facebook:hover {
-  background-color: #3b5999;
-}
-.footer-top .container1 .facebook:hover i {
-  color: #fff;
-}
-.footer-top .container1 .github i {
-  color: #333;
-}
-.footer-top .container1 .github:hover {
-  background-color: #333;
-}
-.footer-top .container1 .github:hover i {
-  color: #fff;
-}
-.footer-top .container1 .contact i {
-  color: rgb(183, 183, 0);
-  margin-left: 1.5px;
-}
-.footer-top .container1 .contact:hover {
-  background-color: rgb(183, 183, 0);
-}
-.footer-top .container1 .contact:hover i {
-  color: #fff;
-}
-
-.footer-top .container2 {
-  width: 30%;
-  text-align: center;
-}
-
-.footer-top .container2 h4 {
-  font-size: 13pt;
-  font-weight: 500;
-}
-
-.footer-top .container2 p {
-  font-size: 9pt;
-}
-
-.footer-top .container3 {
-  width: 20%;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  color: rgb(215, 215, 215);
-}
-
-footer .fa-copyright {
-  font-size: 12pt;
-  margin: 0 1px;
-}
-/* Akhir Footer */
-
 @media screen and (max-width: 770px) {
   /* Header */
   header {
@@ -351,34 +225,9 @@ footer .fa-copyright {
     font-size: 21pt;
   }
   /* Akhir Header */
-
-  /* Footer */
-  footer h3 {
-    font-size: 13pt;
-  }
-  .footer-top .container1 {
-    width: 25%;
-  }
-  .footer-top .container1 .row {
-    overflow: hidden;
-    width: 30px;
-    height: 30px;
-  }
-  .footer-top .container1 .row i {
-    font-size: 13pt;
-  }
-  .footer-top .container2 h4 {
-    font-size: 12pt;
-  }
-  .footer-top .container2 h4 {
-    font-size: 11pt;
-  }
-  .footer-top .container3 {
-    width: 25%;
-  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
   /* Header */
   header {
     height: 60px;
@@ -395,14 +244,14 @@ footer .fa-copyright {
     font-size: 11pt;
   }
   header .row-mid {
-    width: 45%;
+    width: 40%;
     height: 50%;
   }
   header .row-mid form i {
     font-size: 10pt;
   }
   header .row-mid form input {
-    width: 80%;
+    width: 90%;
   }
   header .row-mid form button {
     width: 23px;
@@ -425,34 +274,4 @@ footer .fa-copyright {
     margin-left: 4px !important;
   }
   /* Akhir Content */
-
-  /* Footer */
-  footer {
-    padding: 10px 5px;
-  }
-  footer h3 {
-    font-size: 11pt;
-  }
-  .footer-top .container1 {
-    width: 25%;
-  }
-  .footer-top .container1 .media {
-    display: block;
-  }
-  .footer-top .container1 .row {
-    width: 25px;
-    height: 25px;
-    margin: 2px auto;
-  }
-  .footer-top .container1 .row i {
-    font-size: 10pt;
-    margin-bottom: 50px;
-  }
-  .footer-top .container2 h4 {
-    font-size: 11.5pt;
-  }
-  .footer-top .container2 p {
-    font-size: 9pt;
-  }
-  /* Akhir Footer */
 }
