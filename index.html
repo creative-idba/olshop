@@ -15,9 +15,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--*** Google Font ***-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!--*** Loader ***-->
+    <div class="loader-wrapper">
+      <div class="loaderw">
+        <span class="loader-inner"></span>
+      </div>
+    </div>
+    <!--*** Loader End ***-->
+
     <!-- Navbar -->
     <header>
       <a href="https://creative-idba.github.io" class="row-left">
@@ -25,9 +33,11 @@
         <p>CREATIVE IDBA</p>
       </a>
       <div class="row-right">
-          <form action="search.html">
-           <button type="submit" id="btnSearch"><a href="search.html"><i class="fa fa-search" aria-hidden="true"></i></a></button>
-          </form>
+        <form action="sheet/index/search.html">
+          <button type="submit" id="btnSearch">
+            <a href="sheet/index/search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </button>
+        </form>
         <a href="https://web.whatsapp.com/send?phone=6285854708692" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         <a href="https://creative-idba.github.io/#home" target="_blank"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></a>
       </div>
@@ -39,10 +49,10 @@
       <div class="parallax-text">CREATIVE IDBA</div>
     </section>
     <!-- Akhir Parallax -->
-    
+
     <section class="content1">
-        <p class="tittle">Aneka kue basah</p>
-      <div  class="container data">
+      <p class="tittle">Aneka kue basah</p>
+      <div class="container data">
         <a href="sheet/index/apem.html" class="item-list apem">
           <div class="detail">
             <h3>Apem</h3>
@@ -133,5 +143,8 @@
     </footer>
     <!--  Footer End -->
 
+    <!-- Script -->
+    <script src="sheet/js/loader.js"></script>
+    <!-- Script End -->
   </body>
 </html>

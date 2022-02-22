@@ -127,9 +127,7 @@ $(document).on('click', '.send', function () {
   /* Whatsapp Settings */
   var walink = 'https://web.whatsapp.com/send',
     phone = '6285854708692',
-    walink2 = 'Halo, saya ingin memesan:',
-    text_yes = 'Terkirim.',
-    text_no = 'Isi semua Formulir lalu klik Send.';
+    walink2 = 'Halo, saya ingin memesan:';
 
   /* Smartphone Support */
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
